@@ -16,10 +16,6 @@ const Giphy = () => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
 
-  //page 1 item 1 - item 25
-  //page 2 item 26 - item 50
-  //page 3 item 51 - item 75
-
   useEffect(() => {
     const fetchData = async () => {
       setIsError(false);
